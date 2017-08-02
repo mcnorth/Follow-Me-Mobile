@@ -20,15 +20,20 @@
     height: 100%;
 }
 
+#login-page {
+    text-align: center;
+    background-color: #8bc53f;
+    height: 100%;
+}
+
+
 #panelWhite {
-    
     background: #FFFFFF;
     max-width: 260px;
     margin: 15px;
     padding: 45px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    
     border-radius: 10px;
 }
 
@@ -57,6 +62,12 @@
     height: 100%;
     width: 100%;
     object-fit:contain;
+}
+
+#login {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 #regPanel 
