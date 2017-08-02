@@ -25,19 +25,32 @@
                     <div id="panelWhite">
                         <img src="images/logo.png" /><br />
                         <a href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnLogin">Login</a>
-                        <a href="#register-page" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnRegister">Register</a><br />
+                        <a href="#register-page" data-role="button" data-transition="slide" class="ui-btn ui-corner-all ui-btn-b" id="btnRegister">Register</a><br />
                     </div>
                 </div>
             </div>
         </div>
 
         <div data-role="page" id="register-page" class="pageLayout" data-theme="b">
-            <div data-role="header" data-theme="b">
+            <div data-role="header" data-theme="b" data-add-back-btn="true">
                 <h1>Register</h1>
             </div>
             <div data-role="main" class="ui-content" id="main">
-                <div id="frontPage">
-                    
+                <div id="topPanel">
+                    <img src="images/signUp.png" id="signUp" />
+                </div>
+                <br />
+                <div id="regPanel">
+                    <select data-theme="a">
+                        <option>Choose...</option>
+                        <option value="1">Personal Use</option>
+                        <option value="2">Business Use</option>
+                    </select>
+                    <br />
+                    <input type="text" data-theme="a" id="userName" placeholder="username" />
+                    <input type="text" data-theme="a" id="passWord" placeholder="password" />
+                    <br />
+                    <a href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnRegSubmit">Submit</a>
                 </div>
             </div>
         </div>
