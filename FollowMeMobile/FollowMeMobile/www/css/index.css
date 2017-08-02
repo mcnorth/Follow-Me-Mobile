@@ -1,1 +1,44 @@
+#frontPage 
+{
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
+#front-page {
+    text-align: center;
+    background-color: #8bc53f;
+    height: 100%;
+}
+
+#register-page {
+    text-align: center;
+    background-color: #8bc53f;
+    height: 100%;
+}
+
+#panelWhite {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 260px;
+    margin: 15px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    top: 0px;
+    left: -2px;
+}
+
+#btnLogin:hover
+{
+    background-color: dimgray;
+}
+
+#btnRegister:hover 
+{
+    background-color: dimgray;
+}

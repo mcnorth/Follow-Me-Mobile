@@ -19,13 +19,35 @@
         <title>FollowMeMobile</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <div data-role="page" id="front-page" class="pageLayout" data-theme="b">
+            <div data-role="main" class="ui-content" id="main">
+                <div id="frontPage">
+                    <div id="panelWhite">
+                        <img src="images/logo.png" /><br />
+                        <a href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnLogin">Login</a>
+                        <a href="#register-page" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnRegister">Register</a><br />
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div data-role="page" id="register-page" class="pageLayout" data-theme="b">
+            <div data-role="header" data-theme="b">
+                <h1>Register</h1>
+            </div>
+            <div data-role="main" class="ui-content" id="main">
+                <div id="frontPage">
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="scripts/platformOverrides.js"></script>
         
