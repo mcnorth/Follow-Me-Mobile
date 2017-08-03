@@ -14,17 +14,21 @@
     height: 100%;
 }
 
-#register-page {
-    text-align: center;
-    background-color: #8bc53f;
+.pageLayout {
+    
+    background-color: #8bc53f !important;
     height: 100%;
 }
 
-#login-page {
-    text-align: center;
-    background-color: #8bc53f;
+
+
+.pageLayout .ui-panel-wrapper {
+    
+    background-color: #8bc53f !important;
     height: 100%;
 }
+
+
 
 
 #panelWhite {
@@ -72,6 +76,15 @@
 
 #regPanel 
 {
+    background: #FFFFFF;
+    margin: 5px;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+
+#logPanel {
     background: #FFFFFF;
     margin: 5px;
     height: auto;

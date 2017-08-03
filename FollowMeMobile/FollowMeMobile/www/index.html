@@ -55,7 +55,7 @@
                     <input type="text" data-theme="a" id="userName" placeholder="username" />
                     <input type="text" data-theme="a" id="passWord" placeholder="password" />
                     <br />
-                    <a href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnRegSubmit">Submit</a>
+                    <a href="#personel-user-page" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnRegSubmit">Submit</a>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                     <img src="images/login.png" id="login" />
                 </div>
                 <br />
-                <div id="regPanel">
+                <div id="logPanel">
                     <select data-theme="a">
                         <option>Choose...</option>
                         <option value="1">Personal Use</option>
@@ -82,14 +82,79 @@
                     <input type="text" data-theme="a" id="userName" placeholder="username" />
                     <input type="text" data-theme="a" id="passWord" placeholder="password" />
                     <br />
-                    <a href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnRegSubmit">Submit</a>
+                    <a href="#pDashboard" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnLogSubmit">Submit</a>
                 </div>
             </div>
         </div>
-        <!-------------REGISTER PAGE END------------------->
+        <!-------------LOGIN PAGE END------------------->
 
 
+        <!-------------PERSONEL DASHBOARD BEGIN------------------->
+        <div data-role="page" id="pDashboard" class="pageLayout" data-theme="b">
+            <div data-role="header" data-theme="b" data-add-back-btn="true">
+                <h1>Welcome</h1>
+                <a href="#navPanel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            </div>
+            <div data-role="main" class="ui-content" id="main">
+                <div data-role='collapsible' data-theme='b' data-content-theme='a' data-collapsed='false' data-collapsed-icon='' data-expanded-icon='' id='notif'>
+                    <h3 id='hd3'>Dashboard</h3>
+                    <p id='pHeader'>Notifications</p>
+                    <p id='pPara'>No new notifications</p>
+                </div>
 
+            </div>
+            <div data-role="panel" id="navPanel">
+                <ul data-role="listview">
+                    <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+                    <li><a href="#front-page">Home</a></li>
+                    <li><a href="#pDashboard">Dashboard</a></li>
+                    <li><a href="#pEditProfile">Edit Profile</a></li>
+                    <li><a href="#pViewProfile">View Profile</a></li>
+                    <li><a href="#pSendProfile">Send Profile</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-------------PERSONEL DASHBOARD END------------------->
+
+        <!-------------PERSONEL EDIT PROFILE BEGIN------------------->
+        <div data-role="page" id="pEditProfile" class="pageLayout" data-theme="b">
+            <div data-role="header" data-theme="b" data-add-back-btn="true">
+                <h1>Welcome</h1>
+                <a href="#navPanel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            </div>
+            <div data-role="main" class="ui-content" id="main">
+                <div data-role='collapsible' data-theme='b' data-content-theme='a' data-collapsed='false' data-collapsed-icon='' data-expanded-icon='' id='notif'>
+                    <h3 id='hd3'>Edit Profile</h3>
+                    <p id='pHeader'>Complete your profile</p>
+                    <input type="text" id="pUserName" placeholder="username">
+                    <input type="text" id="pEmail" placeholder="Email">
+                    <input type="text" id="pFirstName" placeholder="First Name">
+                    <input type="text" id="pLastName" placeholder="Last Name">
+                    <input type="text" id="pHouseNo" placeholder="House Number">
+                    <input type="text" id="pStreet" placeholder="Street">
+                    <input type="text" id="pSuburb" placeholder="Suburb">
+                    <input type="text" id="pState" placeholder="State">
+                    <input type="text" id="pCountry" placeholder="Country">
+                    <input type="text" id="pPostCode" placeholder="PostCode">
+                    <a href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnUpdateP">UPDATE PROFILE</a>
+
+                </div>
+
+            </div>
+            <div data-role="panel" id="navPanel">
+                <ul data-role="listview">
+                    <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+                    <li><a href="#front-page">Home</a></li>
+                    <li><a href="#pDashboard">Dashboard</a></li>
+                    <li><a href="#pEditProfile">Edit Profile</a></li>
+                    <li><a href="#pViewProfile">View Profile</a></li>
+                    <li><a href="#pSendProfile">Send Profile</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-------------PERSONEL EDIT PROFILE END------------------->
 
 
 
