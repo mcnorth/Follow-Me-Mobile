@@ -138,9 +138,96 @@
                     <input type="text" id="pCountry" placeholder="Country">
                     <input type="text" id="pPostCode" placeholder="PostCode">
                     <a href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnUpdateP">UPDATE PROFILE</a>
-
                 </div>
+            </div>
+            <div data-role="panel" id="navPanel">
+                <ul data-role="listview">
+                    <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+                    <li><a href="#front-page">Home</a></li>
+                    <li><a href="#pDashboard">Dashboard</a></li>
+                    <li><a href="#pEditProfile">Edit Profile</a></li>
+                    <li><a href="#pViewProfile">View Profile</a></li>
+                    <li><a href="#pSendProfile">Send Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-------------PERSONEL EDIT PROFILE END------------------->
 
+        <!-------------PERSONEL VIEW PROFILE BEGIN------------------->
+        <div data-role="page" id="pViewProfile" class="pageLayout" data-theme="b">
+            <div data-role="header" data-theme="b" data-add-back-btn="true">
+                <h1>Welcome</h1>
+                <a href="#navPanel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            </div>
+            <div data-role="main" class="ui-content" id="main">
+                <div data-role='collapsible' data-theme='b' data-content-theme='a' data-collapsed='false' data-collapsed-icon='' data-expanded-icon='' id='notif'>
+                    <h3 id='hd3'>View Profile</h3>
+                    <p id='pHeader'>Your current details</p>
+                    <input type="text" id="pUserName" placeholder="username">
+                    <input type="text" id="pEmail" placeholder="Email">
+                    <input type="text" id="pFirstName" placeholder="First Name">
+                    <input type="text" id="pLastName" placeholder="Last Name">
+                    <input type="text" id="pHouseNo" placeholder="House Number">
+                    <input type="text" id="pStreet" placeholder="Street">
+                    <input type="text" id="pSuburb" placeholder="Suburb">
+                    <input type="text" id="pState" placeholder="State">
+                    <input type="text" id="pCountry" placeholder="Country">
+                    <input type="text" id="pPostCode" placeholder="PostCode">
+                    
+                </div>
+            </div>
+            <div data-role="panel" id="navPanel">
+                <ul data-role="listview">
+                    <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+                    <li><a href="#front-page">Home</a></li>
+                    <li><a href="#pDashboard">Dashboard</a></li>
+                    <li><a href="#pEditProfile">Edit Profile</a></li>
+                    <li><a href="#pViewProfile">View Profile</a></li>
+                    <li><a href="#pSendProfile">Send Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-------------PERSONEL VIEW PROFILE END------------------->
+
+        <!-------------PERSONEL SEND PROFILE BEGIN------------------->
+        <div data-role="page" id="pSendProfile" class="pageLayout" data-theme="b">
+            <div data-role="header" data-theme="b" data-add-back-btn="true">
+                <h1>Welcome</h1>
+                <a href="#navPanel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            </div>
+            <div data-role="main" class="ui-content" id="main">
+                <div data-role='collapsible' data-theme='b' data-content-theme='a' data-collapsed='false' data-collapsed-icon='' data-expanded-icon='' id='notif'>
+                    <h3 id='hd3'>Send Profile</h3>
+                    <p id='pHeader'>Send your profile</p>
+                    <p id='pPara'>Select the business to send your details to.</p>
+                    <input type="checkbox" name="optus" id="optus">
+                    <label for="optus">Optus</label>
+                    <input type="checkbox" name="telstra" id="telstra">
+                    <label for="telstra">Telstra</label>
+                    <input type="checkbox" name="woolworths" id="woolworths">
+                    <label for="woolworths">Woolworths</label>
+                    <a href="#viewDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-btn-b">View Profile</a>
+                    <a href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnSendP">SEND PROFILE</a>
+                    <div data-role="popup" id="viewDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+                        <div data-role="header" data-theme="a">
+                            <h1>Current Profile</h1>
+                        </div>
+                        <div role="main" class="ui-content">
+                            <h3 class="ui-title">These are the details you will be sending.</h3>
+                            <input type="text" id="pEmail" placeholder="Email">
+                            <input type="text" id="pFirstName" placeholder="First Name">
+                            <input type="text" id="pLastName" placeholder="Last Name">
+                            <input type="text" id="pHouseNo" placeholder="House Number">
+                            <input type="text" id="pStreet" placeholder="Street">
+                            <input type="text" id="pSuburb" placeholder="Suburb">
+                            <input type="text" id="pState" placeholder="State">
+                            <input type="text" id="pCountry" placeholder="Country">
+                            <input type="text" id="pPostCode" placeholder="PostCode">                           
+                            <a href="#" class="ui-btn ui-corner-all ui-btn-b" data-rel="back">Cancel</a>
+                            <a href="#" class="ui-btn ui-corner-all ui-btn-b" id="btnSendP" data-transition="flow">Send</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div data-role="panel" id="navPanel">
                 <ul data-role="listview">
@@ -154,7 +241,7 @@
             </div>
         </div>
 
-        <!-------------PERSONEL EDIT PROFILE END------------------->
+        <!-------------PERSONEL SEND PROFILE END------------------->
 
 
 
