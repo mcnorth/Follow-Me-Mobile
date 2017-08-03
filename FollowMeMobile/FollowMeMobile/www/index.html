@@ -249,7 +249,7 @@
             </div>
             <div data-role="main" class="ui-content" id="main">
                 <div data-role='collapsible' data-theme='b' data-content-theme='a' data-collapsed='false' data-collapsed-icon='' data-expanded-icon='' id='notif'>
-                    <h3 id='hd3'>Dashboard Business</h3>
+                    <h3 id='hd3'>Dashboard</h3>
                     <p id='pHeader'>Notifications</p>
                     <p id='pPara'>No new notifications</p>
                 </div>
@@ -260,11 +260,88 @@
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
                     <li><a href="#front-page">Home</a></li>
                     <li><a href="#bDashboard">Dashboard</a></li>
-                    
+                    <li><a href="#bClientDetails">Get Client Details</a></li>
+                    <li><a href="#bSendNotif">Send Notification</a></li>
                 </ul>
             </div>
         </div>
-        <!-------------PERSONEL DASHBOARD END------------------->
+        <!-------------BUSINESS DASHBOARD END------------------->
+
+        <!-------------BUSINESS CLIENT DETAILS BEGIN------------------->
+        <div data-role="page" id="bClientDetails" class="pageLayout" data-theme="b">
+            <div data-role="header" data-theme="b" data-add-back-btn="true">
+                <h1>Welcome</h1>
+                <a href="#navPanel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            </div>
+            <div data-role="main" class="ui-content" id="main">
+                <div data-role='collapsible' data-theme='b' data-content-theme='a' data-collapsed='false' data-collapsed-icon='' data-expanded-icon='' id='notif'>
+                    <h3 id='hd3'>Get Client Details</h3>
+                    <p id='pPara'>View your clients details</p>
+                    <input type="text" id="FollowMeID" placeholder="Follow Me ID">
+                    <button class="ui-btn ui-btn-b ui-corner-all">Find</button>
+                    <br />
+                    <hr />
+                    <p id="ClientText">Client Details</p>
+                    <input type="text" id="pEmail" placeholder="Email">
+                    <input type="text" id="pFirstName" placeholder="First Name">
+                    <input type="text" id="pLastName" placeholder="Last Name">
+                    <input type="text" id="pHouseNo" placeholder="House Number">
+                    <input type="text" id="pStreet" placeholder="Street">
+                    <input type="text" id="pSuburb" placeholder="Suburb">
+                    <input type="text" id="pState" placeholder="State">
+                    <input type="text" id="pCountry" placeholder="Country">
+                    <input type="text" id="pPostCode" placeholder="PostCode">
+                </div>
+            </div>
+            <div data-role="panel" id="navPanel">
+                <ul data-role="listview">
+                    <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+                    <li><a href="#front-page">Home</a></li>
+                    <li><a href="#bDashboard">Dashboard</a></li>
+                    <li><a href="#bClientDetails">Get Client Details</a></li>
+                    <li><a href="#bSendNotif">Send Notification</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-------------BUSINESS CLIENT DETAILS END------------------->
+
+        <!-------------BUSINESS SEND NOTIFICATION BEGIN------------------->
+        <div data-role="page" id="bClientDetails" class="pageLayout" data-theme="b">
+            <div data-role="header" data-theme="b" data-add-back-btn="true">
+                <h1>Welcome</h1>
+                <a href="#navPanel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            </div>
+            <div data-role="main" class="ui-content" id="main">
+                <div data-role='collapsible' data-theme='b' data-content-theme='a' data-collapsed='false' data-collapsed-icon='' data-expanded-icon='' id='notif'>
+                    <h3 id='hd3'>Get Client Details</h3>
+                    <p id='pPara'>View your clients details</p>
+                    <input type="text" id="FollowMeID" placeholder="Follow Me ID">
+                    <button class="ui-btn ui-btn-b ui-corner-all">Find</button>
+                    <br />
+                    <hr />
+                    <p id="ClientText">Client Details</p>
+                    <input type="text" id="pEmail" placeholder="Email">
+                    <input type="text" id="pFirstName" placeholder="First Name">
+                    <input type="text" id="pLastName" placeholder="Last Name">
+                    <input type="text" id="pHouseNo" placeholder="House Number">
+                    <input type="text" id="pStreet" placeholder="Street">
+                    <input type="text" id="pSuburb" placeholder="Suburb">
+                    <input type="text" id="pState" placeholder="State">
+                    <input type="text" id="pCountry" placeholder="Country">
+                    <input type="text" id="pPostCode" placeholder="PostCode">
+                </div>
+            </div>
+            <div data-role="panel" id="navPanel">
+                <ul data-role="listview">
+                    <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+                    <li><a href="#front-page">Home</a></li>
+                    <li><a href="#bDashboard">Dashboard</a></li>
+                    <li><a href="#bClientDetails">Get Client Details</a></li>
+                    <li><a href="#bSendNotif">Send Notification</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-------------BUSINESS SEND NOTIFICATION END------------------->
 
 
 

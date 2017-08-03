@@ -20,16 +20,11 @@
     height: 100%;
 }
 
-
-
-.pageLayout .ui-panel-wrapper {
-    
+.pageLayout .ui-panel-wrapper 
+{   
     background-color: #8bc53f !important;
     height: 100%;
 }
-
-
-
 
 #panelWhite {
     background: #FFFFFF;
