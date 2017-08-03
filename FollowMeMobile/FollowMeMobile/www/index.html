@@ -73,7 +73,7 @@
                 </div>
                 <br />
                 <div id="logPanel">
-                    <select data-theme="a">
+                    <select data-theme="a" id="userType">
                         <option>Choose...</option>
                         <option value="1">Personal Use</option>
                         <option value="2">Business Use</option>
@@ -82,7 +82,7 @@
                     <input type="text" data-theme="a" id="userName" placeholder="username" />
                     <input type="text" data-theme="a" id="passWord" placeholder="password" />
                     <br />
-                    <a href="#pDashboard" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnLogSubmit">Submit</a>
+                    <a href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnLogSubmit">Submit</a>
                 </div>
             </div>
         </div>
@@ -114,7 +114,6 @@
                 </ul>
             </div>
         </div>
-
         <!-------------PERSONEL DASHBOARD END------------------->
 
         <!-------------PERSONEL EDIT PROFILE BEGIN------------------->
@@ -240,8 +239,32 @@
                 </ul>
             </div>
         </div>
-
         <!-------------PERSONEL SEND PROFILE END------------------->
+
+        <!-------------BUSINESS DASHBOARD BEGIN------------------->
+        <div data-role="page" id="bDashboard" class="pageLayout" data-theme="b">
+            <div data-role="header" data-theme="b" data-add-back-btn="true">
+                <h1>Welcome</h1>
+                <a href="#navPanel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            </div>
+            <div data-role="main" class="ui-content" id="main">
+                <div data-role='collapsible' data-theme='b' data-content-theme='a' data-collapsed='false' data-collapsed-icon='' data-expanded-icon='' id='notif'>
+                    <h3 id='hd3'>Dashboard Business</h3>
+                    <p id='pHeader'>Notifications</p>
+                    <p id='pPara'>No new notifications</p>
+                </div>
+
+            </div>
+            <div data-role="panel" id="navPanel">
+                <ul data-role="listview">
+                    <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+                    <li><a href="#front-page">Home</a></li>
+                    <li><a href="#bDashboard">Dashboard</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-------------PERSONEL DASHBOARD END------------------->
 
 
 
