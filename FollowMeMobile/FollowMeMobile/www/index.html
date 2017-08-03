@@ -46,7 +46,7 @@
                 </div>
                 <br />
                 <div id="regPanel">
-                    <select data-theme="a">
+                    <select data-theme="a" id="userType">
                         <option>Choose...</option>
                         <option value="1">Personal Use</option>
                         <option value="2">Business Use</option>
@@ -55,7 +55,7 @@
                     <input type="text" data-theme="a" id="userName" placeholder="username" />
                     <input type="text" data-theme="a" id="passWord" placeholder="password" />
                     <br />
-                    <a href="#personel-user-page" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnRegSubmit">Submit</a>
+                    <a href="#" data-role="button" data-transition="slide" class="ui-btn ui-corner-all ui-btn-b" id="btnRegSubmit">Submit</a>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
                     <input type="text" data-theme="a" id="userName" placeholder="username" />
                     <input type="text" data-theme="a" id="passWord" placeholder="password" />
                     <br />
-                    <a href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-b" id="btnLogSubmit">Submit</a>
+                    <a href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-b" data-transition="slide" id="btnLogSubmit">Submit</a>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
 
         <!-------------PERSONEL DASHBOARD BEGIN------------------->
         <div data-role="page" id="pDashboard" class="pageLayout" data-theme="b">
-            <div data-role="header" data-theme="b" data-add-back-btn="true">
+            <div data-role="header" data-theme="b">
                 <h1>Welcome</h1>
                 <a href="#navPanel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
             </div>
@@ -106,11 +106,11 @@
             <div data-role="panel" id="navPanel">
                 <ul data-role="listview">
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
-                    <li><a href="#front-page">Home</a></li>
-                    <li><a href="#pDashboard">Dashboard</a></li>
-                    <li><a href="#pEditProfile">Edit Profile</a></li>
-                    <li><a href="#pViewProfile">View Profile</a></li>
-                    <li><a href="#pSendProfile">Send Profile</a></li>
+                    <li><a href="#front-page" data-transition="slide">Home</a></li>
+                    <li><a href="#pDashboard" data-transition="slide">Dashboard</a></li>
+                    <li><a href="#pEditProfile" data-transition="slide">Edit Profile</a></li>
+                    <li><a href="#pViewProfile" data-transition="slide">View Profile</a></li>
+                    <li><a href="#pSendProfile" data-transition="slide">Send Profile</a></li>
                 </ul>
             </div>
         </div>
@@ -142,11 +142,11 @@
             <div data-role="panel" id="navPanel">
                 <ul data-role="listview">
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
-                    <li><a href="#front-page">Home</a></li>
-                    <li><a href="#pDashboard">Dashboard</a></li>
-                    <li><a href="#pEditProfile">Edit Profile</a></li>
-                    <li><a href="#pViewProfile">View Profile</a></li>
-                    <li><a href="#pSendProfile">Send Profile</a></li>
+                    <li><a href="#front-page" data-transition="slide">Home</a></li>
+                    <li><a href="#pDashboard" data-transition="slide">Dashboard</a></li>
+                    <li><a href="#pEditProfile" data-transition="slide">Edit Profile</a></li>
+                    <li><a href="#pViewProfile" data-transition="slide">View Profile</a></li>
+                    <li><a href="#pSendProfile" data-transition="slide">Send Profile</a></li>
                 </ul>
             </div>
         </div>
@@ -154,7 +154,7 @@
 
         <!-------------PERSONEL VIEW PROFILE BEGIN------------------->
         <div data-role="page" id="pViewProfile" class="pageLayout" data-theme="b">
-            <div data-role="header" data-theme="b" data-add-back-btn="true">
+            <div data-role="header" data-theme="b">
                 <h1>Welcome</h1>
                 <a href="#navPanel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
             </div>
@@ -171,18 +171,17 @@
                     <input type="text" id="pSuburb" placeholder="Suburb">
                     <input type="text" id="pState" placeholder="State">
                     <input type="text" id="pCountry" placeholder="Country">
-                    <input type="text" id="pPostCode" placeholder="PostCode">
-                    
+                    <input type="text" id="pPostCode" placeholder="PostCode">                   
                 </div>
             </div>
             <div data-role="panel" id="navPanel">
                 <ul data-role="listview">
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
-                    <li><a href="#front-page">Home</a></li>
-                    <li><a href="#pDashboard">Dashboard</a></li>
-                    <li><a href="#pEditProfile">Edit Profile</a></li>
-                    <li><a href="#pViewProfile">View Profile</a></li>
-                    <li><a href="#pSendProfile">Send Profile</a></li>
+                    <li><a href="#front-page" data-transition="slide">Home</a></li>
+                    <li><a href="#pDashboard" data-transition="slide">Dashboard</a></li>
+                    <li><a href="#pEditProfile" data-transition="slide">Edit Profile</a></li>
+                    <li><a href="#pViewProfile" data-transition="slide">View Profile</a></li>
+                    <li><a href="#pSendProfile" data-transition="slide">Send Profile</a></li>
                 </ul>
             </div>
         </div>
@@ -231,11 +230,11 @@
             <div data-role="panel" id="navPanel">
                 <ul data-role="listview">
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
-                    <li><a href="#front-page">Home</a></li>
-                    <li><a href="#pDashboard">Dashboard</a></li>
-                    <li><a href="#pEditProfile">Edit Profile</a></li>
-                    <li><a href="#pViewProfile">View Profile</a></li>
-                    <li><a href="#pSendProfile">Send Profile</a></li>
+                    <li><a href="#front-page" data-transition="slide">Home</a></li>
+                    <li><a href="#pDashboard" data-transition="slide">Dashboard</a></li>
+                    <li><a href="#pEditProfile" data-transition="slide">Edit Profile</a></li>
+                    <li><a href="#pViewProfile" data-transition="slide">View Profile</a></li>
+                    <li><a href="#pSendProfile" data-transition="slide">Send Profile</a></li>
                 </ul>
             </div>
         </div>
@@ -258,10 +257,10 @@
             <div data-role="panel" id="navPanel">
                 <ul data-role="listview">
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
-                    <li><a href="#front-page">Home</a></li>
-                    <li><a href="#bDashboard">Dashboard</a></li>
-                    <li><a href="#bClientDetails">Get Client Details</a></li>
-                    <li><a href="#bSendNotif">Send Notification</a></li>
+                    <li><a href="#front-page" data-transition="slide">Home</a></li>
+                    <li><a href="#bDashboard" data-transition="slide">Dashboard</a></li>
+                    <li><a href="#bClientDetails" data-transition="slide">Get Client Details</a></li>
+                    <li><a href="#bSendNotif" data-transition="slide">Send Notification</a></li>
                 </ul>
             </div>
         </div>
@@ -296,48 +295,41 @@
             <div data-role="panel" id="navPanel">
                 <ul data-role="listview">
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
-                    <li><a href="#front-page">Home</a></li>
-                    <li><a href="#bDashboard">Dashboard</a></li>
-                    <li><a href="#bClientDetails">Get Client Details</a></li>
-                    <li><a href="#bSendNotif">Send Notification</a></li>
+                    <li><a href="#front-page" data-transition="slide">Home</a></li>
+                    <li><a href="#bDashboard" data-transition="slide">Dashboard</a></li>
+                    <li><a href="#bClientDetails" data-transition="slide">Get Client Details</a></li>
+                    <li><a href="#bSendNotif" data-transition="slide">Send Notification</a></li>
                 </ul>
             </div>
         </div>
         <!-------------BUSINESS CLIENT DETAILS END------------------->
 
         <!-------------BUSINESS SEND NOTIFICATION BEGIN------------------->
-        <div data-role="page" id="bClientDetails" class="pageLayout" data-theme="b">
+        <div data-role="page" id="bSendNotif" class="pageLayout" data-theme="b">
             <div data-role="header" data-theme="b" data-add-back-btn="true">
                 <h1>Welcome</h1>
                 <a href="#navPanel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
             </div>
             <div data-role="main" class="ui-content" id="main">
                 <div data-role='collapsible' data-theme='b' data-content-theme='a' data-collapsed='false' data-collapsed-icon='' data-expanded-icon='' id='notif'>
-                    <h3 id='hd3'>Get Client Details</h3>
-                    <p id='pPara'>View your clients details</p>
+                    <h3 id='hd3'>Send Notification</h3>
+                    <p id='pPara'>Send a message to your client</p>
                     <input type="text" id="FollowMeID" placeholder="Follow Me ID">
                     <button class="ui-btn ui-btn-b ui-corner-all">Find</button>
                     <br />
-                    <hr />
-                    <p id="ClientText">Client Details</p>
-                    <input type="text" id="pEmail" placeholder="Email">
-                    <input type="text" id="pFirstName" placeholder="First Name">
-                    <input type="text" id="pLastName" placeholder="Last Name">
-                    <input type="text" id="pHouseNo" placeholder="House Number">
-                    <input type="text" id="pStreet" placeholder="Street">
-                    <input type="text" id="pSuburb" placeholder="Suburb">
-                    <input type="text" id="pState" placeholder="State">
-                    <input type="text" id="pCountry" placeholder="Country">
-                    <input type="text" id="pPostCode" placeholder="PostCode">
+                    <br />
+                    <p>Message:</p>
+                    <textarea id="msgArea"></textarea>
+                    <button class="ui-btn ui-btn-b ui-corner-all">Send</button>                   
                 </div>
             </div>
             <div data-role="panel" id="navPanel">
                 <ul data-role="listview">
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
-                    <li><a href="#front-page">Home</a></li>
-                    <li><a href="#bDashboard">Dashboard</a></li>
-                    <li><a href="#bClientDetails">Get Client Details</a></li>
-                    <li><a href="#bSendNotif">Send Notification</a></li>
+                    <li><a href="#front-page" data-transition="slide">Home</a></li>
+                    <li><a href="#bDashboard" data-transition="slide">Dashboard</a></li>
+                    <li><a href="#bClientDetails" data-transition="slide">Get Client Details</a></li>
+                    <li><a href="#bSendNotif" data-transition="slide">Send Notification</a></li>
                 </ul>
             </div>
         </div>

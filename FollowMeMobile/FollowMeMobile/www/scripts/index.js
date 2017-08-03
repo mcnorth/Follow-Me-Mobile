@@ -7,6 +7,12 @@ $(document).ready(function ()
     $("#login-page").on("click", "#btnLogSubmit", function () {
         GetDashboard();
     });
+
+    $("#register-page").on("click", "#btnRegSubmit", function () {
+        GetDashboard();
+    });
+
+
 });
 
 
